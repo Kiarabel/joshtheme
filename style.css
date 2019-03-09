@@ -1,0 +1,154 @@
+.body{
+    background-color: #3f3948;
+        font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.navbar{
+    font-size:0.875em;
+    margin-bottom:0px;
+}
+
+a{
+    color: #fff;
+}
+
+.navbar-nav li a:hover {
+    
+    background-color: transparent;
+}
+
+.orange{
+    color:darkorange;
+}
+
+.navbar-brand{
+    font-size:2.5em;
+    font-weight:bold;
+    letter-spacing: -3px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.herobg{
+    height: 700px;
+    background: url("Images/hero.jpg") no-repeat center center;
+    background-size: cover; /*make the background image the whole div proportionally*/
+    max-width: 1412px; /*make sure image does not get too big'*/
+}
+
+.herobg h1{
+    font-family: 'Raleway', sans-serif;
+    float:right; /*float the text to the right*/
+    color: #ffff; /*makes text white*/
+    width: 341px; /*give h1 a width so we wrap the text*/
+    font-size: 7.125em; /*114px in photoshop divided by 16px*/
+    letter-spacing: -10px; /*fix letter spacing*/
+    font-weight: 800; /*make text bold*/
+    line-height:75%; /*decreases line height*/
+    text-align:right;
+    margin-top: 140px; /*the words are 140px away from navbar in photoshop*/
+}
+
+.maincontainer{
+    background-color: #fff;
+}
+
+.excerpts img{
+    display:block; /*this image now has access to padding and margins*/
+    float: right; /*move image to the right, wrap text*/
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px; /*push image down so it is in line with text*/
+}
+
+.excerpts a{
+    color: #889898;
+}
+
+.maintext h2{
+    color:darkorange;
+    font-family: raleway, sans-serif;
+    font-size:1.5em;
+}
+
+.maintext h3{
+    font-family: raleway, sans-serif;
+    font-weight:800;
+}
+
+.sidebar{
+ 
+}
+
+.aside_elements{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.aside_elements h2{
+   color: darkorange;
+    font-family: raleway, sans-serif;
+    font-size: 1.5em;
+}
+
+.footerbg{
+  height: 150px;
+    background: url("Images/footer.jpg") no-repeat center center;
+    background-size: cover;
+    max-width: 1412px;
+}
+
+.footerbg p{
+  color: #fff;
+    margin: 10px;
+}
+
+.leftfoot img{
+   margin: 10px;
+   
+}
+
+.rightfoot p{
+  text-align: right;
+}
+
+.rightfoot img{
+  float: right;
+margin: 10px;
+}
+
+@media only screen and (max-width:992px) {
+    .leftfoot{
+        width: 50%; /*at 992 make width of left foot 50% of screen size*/
+        padding-left:0px; /*remove any bootstrap padding that mess with our media query*/
+        padding-right:0px;
+        float:left; /*make sure leftfoot div stays on left*/
+    }
+    
+    .rightfoot{
+        width: 50%; /*at 992 make width of right foot 50% of screen size*/
+        padding-left:0px; /*remove any bootstrap padding that mess with our media query*/
+        padding-right:0px;
+        float:right; /*make sure rightfoot div stays on right*/
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .herobg {
+        height:500px;
+    }
+    
+    .herobg h1 {
+        float:none;
+        width: 221px;
+        font-size: 5.125em;
+        letter-spacing: -10px;
+        margin-top: 220px;
+        line-height: 80%;
+        letter-spacing: -9px;
+    }
+    
+}
