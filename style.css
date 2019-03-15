@@ -18,6 +18,10 @@ a{
     background-color: transparent;
 }
 
+a:hover {
+    color: darkorange;
+}
+
 .orange{
     color:darkorange;
 }
